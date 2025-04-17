@@ -15,5 +15,8 @@
 ### Examples:
 
 - **Default Pomodoro**: `flow` </br>
-- **Custom (no break)**: `flow Study 40` </br>
-- **Custom (with break)**: `flow Study 40 -b 5` </br>
+![Image Pomodoro Mode](assets/pomodoro-mode.jpg)
+- **Custom (no break)**: `flow Study 2` </br>
+![Image Custom no Break](assets/custom-no-break.jpg)
+- **Custom (with break)**: `flow Study 2 -b 1` </br>
+![Image Custom with Break](assets/custom-with-break.jpg)
