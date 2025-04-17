@@ -11,6 +11,13 @@ internal abstract class Program
         {
             int exitCode;
 
+            System.Console.Clear();
+            var rule = new Rule("[teal]Flow[/]")
+            {
+                Justification = Justify.Left
+            };
+            AnsiConsole.Write(rule);
+            
             if (args.Length == 0)
             {
                 await Core.DefaultPomodoroFlow();
@@ -19,13 +26,6 @@ internal abstract class Program
             else
             {
                 var app = new CommandApp<FlowCommand>();
-                System.Console.Clear();
-                var rule = new Rule("[teal]Flow[/]")
-                {
-                    Justification = Justify.Left
-                };
-                AnsiConsole.Write(rule);
-
                 exitCode = await app.RunAsync(args);
             }
 

@@ -11,6 +11,8 @@ internal static class Core
         const string focus = "Focus";
         const string pause = "Break";
         
+        System.Console.WriteLine();
+        
         AnsiConsole.MarkupLine($"[bold teal]{focus}[/] for [olive]{focusTime}[/] minute(s).");
         Messages.ShowStartingCounting();
         StartTimer(focusTime, focus);
